@@ -1,0 +1,72 @@
+// Define variables
+$background-color: #1f2522;
+$text-color: #e7e3e3;
+$font-family: Helvetica, sans-serif;
+
+$heading-font-size: 30px;
+$item-font-size: 13px;
+$item-image-height: 270px;
+$mobile-item-image-height: 200px;
+
+$padding: 30px;
+$heading-margin-bottom: 30px;
+$heading-margin-left: 15px;
+$item-gap: 20px;
+$mobile-item-gap: 10px;
+$item-margin-bottom: 20px;
+
+.area {
+  background-color: $background-color;
+  padding: $padding;
+  color: $text-color;
+
+  &__heading {
+    text-align: left;
+    margin-bottom: $heading-margin-bottom;
+    margin-left: $heading-margin-left;
+    font-size: $heading-font-size;
+    font-family: $font-family;
+    font-weight: normal;
+  }
+
+  &__items-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: $item-gap;
+
+    @media screen and (max-width: 720px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: $mobile-item-gap;
+    }
+  }
+
+  &__item {
+    text-align: left;
+    font-size: $item-font-size;
+    font-weight: bold;
+    flex: 1 1 25%;
+    box-sizing: border-box;
+
+    margin-bottom: $item-margin-bottom;
+
+    @media screen and (max-width: 720px) {
+      flex: 1 1 calc(50% - $mobile-item-gap);
+    }
+  }
+
+  &__item-image {
+    width: 100%;
+    height: $item-image-height;
+    object-fit: cover;
+    border-radius: 1px;
+
+    @media screen and (max-width: 720px) {
+      max-height: $mobile-item-image-height;
+    }
+  }
+
+  &__item-name {
+    margin-top: 10px;
+  }
+}

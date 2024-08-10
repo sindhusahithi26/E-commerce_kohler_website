@@ -1,0 +1,232 @@
+// Define color variables
+$background-color: #1f2522;
+$text-color: #c1c1c1;
+$highlight-color: #ffffff;
+$button-bg: #ffffff;
+$button-hover-bg: #212121;
+$placeholder-color: #ffffff;
+$border-color: #cdcdcd;
+
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px 0 20px;
+  background: $background-color;
+  color: $text-color;
+  font-family: helvetica;
+
+  #images {
+    * {
+      padding-right: 30px;
+      padding-top: 25px;
+      width: 25px;
+      height: 25px;
+    }
+    
+    p {
+      width: 100%;
+      font-size: 20px;
+    }
+  }
+
+  #follow {
+    font-size: 24.2px;
+    color: $highlight-color;
+  }
+
+  .footer-top {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    padding: 1px;
+    color: $highlight-color;
+    flex: 50% 50%;
+
+    > div {
+      width: 100%;
+    }
+
+    #form {
+      p {
+        font-size: 13px;
+        color: $border-color;
+        margin-bottom: 30px;
+      }
+
+      input[type="email"] {
+        background: transparent;
+        width: 100%;
+        color: $highlight-color;
+        outline: none;
+        font-size: 20px;
+        border: transparent;
+        border-bottom: 1px solid $border-color;
+        padding: 10px 0;
+        display: inline-block;
+      }
+
+      input[type="submit"] {
+        position: absolute;
+        padding: 14px 28px;
+        right: 3px;
+        top: 35%;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: $button-bg;
+
+        &:hover {
+          border: 1px solid $highlight-color;
+          background-color: $button-hover-bg;
+          color: $highlight-color;
+        }
+      }
+
+      ::placeholder {
+        color: $placeholder-color;
+        opacity: 1;
+        font-size: 15px;
+      }
+    }
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+    flex: 1 1 1 1;
+
+    > div {
+      p {
+        text-align: left;
+        font-size: 18px;
+        padding-left: 10px;
+        color: $highlight-color;
+      }
+
+      ul {
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding: 3px 0 3px 3px;
+        color: #cdcdcd;
+
+        li {
+          display: block;
+          line-height: 34px;
+
+          &:hover {
+            color: $highlight-color;
+          }
+        }
+      }
+    }
+  }
+
+  .links {
+    min-width: 100vw;
+    margin-left: -40px;
+    display: flex;
+    background-color: black;
+    position: relative;
+    font-size: 16px;
+    color: $highlight-color;
+    opacity: 1;
+
+    ul.services {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        display: inline;
+        margin: 0 10px;
+      }
+    }
+
+    .copyright {
+      position: absolute;
+      right: 20px;
+      top: 15px;
+    }
+  }
+
+  .footer-bottom-buttons,
+  .footer_button_content {
+    display: none;
+  }
+
+  @media screen and (max-width: 720px) {
+    #form {
+      position: relative;
+
+      input[type="submit"] {
+        top: 50%;
+      }
+    }
+
+    .footer-top {
+      flex-direction: column;
+      gap: 30px;
+      padding: 0 20px;
+    }
+
+    .footer {
+      min-width: 100%;
+      padding: 0;
+    }
+
+    .footer-bottom {
+      display: none;
+    }
+
+    .footer-bottom-buttons {
+      display: inline;
+
+      button {
+        width: 100%;
+        margin-top: 20px;
+        background-color: transparent;
+        color: $highlight-color;
+        padding-left: 15px;
+        padding-top: 20px;
+        font-size: 22px;
+        text-align: left;
+        border: none;
+        border-top: 1px solid $border-color;
+        position: relative;
+
+        .plus-icon {
+          font-size: 22px;
+        }
+      }
+    }
+
+    .footer_button_content ul li {
+      display: block;
+      margin-top: 20px;
+      color: #cdcdcd;
+      font-size: 18px;
+      margin-left: -40px;
+    }
+
+    .links {
+      margin-top: 20px;
+      border-top: 1px solid $border-color;
+      flex-direction: column;
+
+      ul li,
+      span {
+        position: static;
+        display: block;
+        padding-top: 15px;
+      }
+
+      span {
+        padding-left: 50px;
+        padding-top: 30px;
+        padding-bottom: 70px;
+        font-size: 14px;
+      }
+    }
+  }
+}

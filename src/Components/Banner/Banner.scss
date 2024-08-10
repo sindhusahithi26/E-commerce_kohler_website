@@ -1,0 +1,56 @@
+// Define variables
+$background-color: #555454;
+$text-color: #e7e3e3;
+$font-family: Helvetica, sans-serif;
+
+$small-font-size: 12px;
+$medium-font-size: 14px;
+
+$small-padding: 6px 0;
+$medium-padding: 10px 0;
+$large-padding: 12px 0;
+
+.banner {
+  background-color: $background-color; 
+  color: $text-color;
+  text-align: center;
+  padding: 8px 0; 
+  font-size: $medium-font-size;
+  font-weight: bold;
+  font-family: $font-family;
+  width: 100%; 
+  box-sizing: border-box; 
+  margin: 0; 
+
+  
+  @media (max-width: 768px) {
+    font-size: $small-font-size; 
+    padding: $small-padding;
+    font-weight: normal; 
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    font-size: $medium-font-size; 
+    padding: $medium-padding;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    display: flex;
+    height: 54px;
+    justify-content: center;
+    font-weight: normal; 
+  }
+
+  // Responsive design for desktop screens
+  @media (min-width: 1025px) {
+    font-size: $medium-font-size; 
+    padding: $large-padding;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    display: flex;
+    height: 54px;
+    justify-content: center;
+    font-weight: normal;
+  }
+}

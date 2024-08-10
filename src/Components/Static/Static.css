@@ -1,0 +1,243 @@
+.static {
+  background: #1f2522;
+  font-family: Helvetica, sans-serif;
+  font-weight: 100;
+  opacity: 1;
+}
+
+.content-2 {
+  display: flex;
+  flex: 50% 50%;
+  gap: 60px;
+  height: 400px;
+  padding: 95px 0 50px 0;
+  color: #c1c1c1;
+  font-weight: 100;
+  padding-left: 70px;
+}
+.content-2__image {
+  background-image: url("../../assets/image-6.svg");
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+.content-2__content {
+  padding-top: 40px;
+  font-size: 14px;
+}
+.content-2__heading {
+  font-size: 46px;
+  font-weight: 100;
+  letter-spacing: -0.05px;
+  color: #f7f1f1;
+}
+.content-2__desc {
+  color: #cdcdcd;
+  /*margin: $margin-bottom; */
+  line-height: 20.75px;
+  text-align: left;
+}
+.content-2__button {
+  background-color: #1f2522;
+  color: #f7f1f1;
+  padding: 15px 22px;
+  border: 1px solid white;
+  font-size: 18px;
+  transition: all 200ms linear;
+  margin-left: 10px;
+}
+.content-2__button:hover {
+  transform: scale(0.9);
+}
+
+.image-card-3 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+.image-card-3__image-1, .image-card-3__image-2 {
+  flex: 1 1 45%;
+  background-color: #1f2522;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  color: #d1cbcb;
+}
+.image-card-3__image-1 img, .image-card-3__image-2 img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.image_head-2 {
+  font-size: 26px;
+  color: #fef0f0;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.image-desc {
+  font-size: 13px;
+  line-height: 19.5px;
+  color: #d1cbcb;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.image-card-3__image-1 a,
+.image-card-3__image-2 a {
+  color: #faeded;
+  font-size: 12px;
+  text-decoration: underline;
+  font-weight: bold;
+  text-underline-offset: 6px;
+  text-align: left;
+  display: block;
+  margin-top: 10px;
+}
+
+.why-buy {
+  text-align: center;
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #1f2522;
+}
+.why-buy__heading {
+  font-size: 40px;
+  color: #fef0f0;
+  margin-bottom: 40px;
+  font-family: Helvetica, sans-serif;
+  font-weight: normal;
+}
+.why-buy__sections {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 10px;
+  padding: 0 20px;
+}
+@media screen and (max-width: 720px) {
+  .why-buy__sections {
+    flex-direction: column;
+  }
+}
+.why-buy__section {
+  flex: 1 1 20%;
+  background-color: #1f2522;
+  padding: 20px;
+  border-radius: 1px;
+  color: #d1cbcb;
+  border-left: 1px solid #ffffff;
+  text-align: left;
+}
+.why-buy__section:first-child {
+  border-left: none;
+}
+@media screen and (max-width: 720px) {
+  .why-buy__section {
+    flex: 1 1 100%;
+    border-left: none;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 30px;
+    text-align: left;
+  }
+}
+.why-buy__subheading {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.why-buy__paragraph {
+  font-size: 15px;
+  line-height: 19.5px;
+  margin-bottom: 15px;
+}
+.why-buy__terms {
+  color: #faeded;
+  font-size: 12px;
+  text-decoration: underline;
+  font-weight: bold;
+  text-underline-offset: 6px;
+}
+
+@media screen and (max-width: 720px) {
+  .static {
+    position: relative;
+    padding-top: 130px;
+  }
+  .content-3 {
+    padding: 20px;
+    flex-direction: column;
+    padding-bottom: 100px;
+    position: relative;
+  }
+  .content-3__image {
+    position: relative;
+    margin-top: 130px;
+    width: 100%;
+    min-height: 60%;
+  }
+  .content-3__content {
+    margin-top: -80px;
+    padding: 0;
+    max-height: 20%;
+  }
+  .content-3__heading {
+    position: absolute;
+    top: 10px;
+  }
+  .content-3__desc {
+    margin-bottom: 30px;
+  }
+  .content-3__button {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  .content-2 {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    height: auto;
+    padding-left: 0;
+  }
+  .content-2__image {
+    height: 200px;
+    margin-top: 20px;
+  }
+  .content-2__content {
+    padding-top: 0;
+    font-size: 16px;
+    text-align: left;
+  }
+  .content-2__heading {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  .content-2__desc {
+    margin: 50px 0;
+    line-height: 1.6;
+  }
+  .image-card-3 {
+    margin-top: -2px;
+    width: 100%;
+    flex-direction: column;
+    border: none;
+  }
+  .image-card-3 div {
+    max-width: 75%;
+  }
+  .image-card-3 div img {
+    max-width: 75vw;
+  }
+}
+.new-line {
+  display: block;
+  margin-top: 8px;
+}
+
+/*# sourceMappingURL=Static.css.map */

@@ -1,0 +1,129 @@
+// Define variables
+$background-color: #1f2522;
+$text-color: white;
+$border-radius: 1px;
+$font-family: Helvetica;
+$font-size-large: 36px;
+$font-size-medium: 18px;
+$font-size-small: 18px;
+$padding-large: 60px;
+$padding-medium: 30px;
+$padding-small: 12px;
+$margin-large: 20px;
+$margin-medium: 40px;
+$margin-small: 10px;
+$button-padding: 12px 40px;
+$border-color: white;
+$scrollbar-thumb-color: white;
+$scrollbar-track-color: black;
+$scrollbar-height: 5px;
+
+.best-sellers {
+  padding: $padding-large;
+  background-color: $background-color;
+  color: $text-color;
+  border-radius: $border-radius;
+  width: calc(100% - 0px); 
+  margin: 0 auto; 
+  box-sizing: border-box;
+
+  .header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: $font-size-large;
+    padding-left: $padding-medium;
+    padding-bottom: $padding-medium;
+    font-family: $font-family;
+    font-weight: normal;
+
+    h2 {
+      margin: 0;
+      font-size: $font-size-large;
+      font-family: $font-family;
+      font-weight: normal;
+      text-align: left;
+    }
+  }
+
+  .view-all {
+    padding: $button-padding;
+    background-color: $background-color;
+    color: $text-color;
+    border: 1px solid $border-color; 
+    border-radius: $border-radius;
+    cursor: pointer;
+    font-size: $font-size-medium; 
+    white-space: nowrap;
+    margin-right: 0; 
+  }
+
+  .items-container {
+    display: flex;
+    overflow-x: auto;
+    margin-top: $margin-large;
+    padding-bottom: $margin-medium; 
+
+    &::-webkit-scrollbar {
+      height: $scrollbar-height; 
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $scrollbar-thumb-color; 
+      border-radius: $border-radius;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $scrollbar-track-color; 
+    }
+
+    .items {
+      flex: 0 0 auto;
+      width: 200px;
+      margin-right: 5px;
+      text-align: left;
+
+      .item-image {
+        width: 100%; 
+        height: 250px; 
+        object-fit: cover;
+        border-radius: $border-radius;
+      }
+
+      .item-name {
+        margin-top: 8px;
+        font-size: 18px; 
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .header1 {
+    flex-direction: column; 
+    align-items: flex-start;
+    padding-top: 120px;
+  }
+
+  .items-container {
+    margin-bottom: $margin-medium; 
+  }
+
+  .view-all {
+    position: absolute;
+    bottom: 0;
+    left: 60px;
+    min-width: 70%; 
+    align-self: stretch; 
+  }
+
+  .best-sellers {
+    position: relative;
+  }
+
+  
+  .component-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}

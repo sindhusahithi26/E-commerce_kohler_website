@@ -1,0 +1,54 @@
+.area {
+  background-color: #1f2522;
+  padding: 30px;
+  color: #e7e3e3;
+}
+.area__heading {
+  text-align: left;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  font-size: 30px;
+  font-family: Helvetica, sans-serif;
+  font-weight: normal;
+}
+.area__items-container {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+@media screen and (max-width: 720px) {
+  .area__items-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+.area__item {
+  text-align: left;
+  font-size: 13px;
+  font-weight: bold;
+  flex: 1 1 25%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 720px) {
+  .area__item {
+    flex: 1 1 calc(50% - 10px);
+  }
+}
+.area__item-image {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 1px;
+}
+@media screen and (max-width: 720px) {
+  .area__item-image {
+    max-height: 200px;
+  }
+}
+.area__item-name {
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=Area.css.map */

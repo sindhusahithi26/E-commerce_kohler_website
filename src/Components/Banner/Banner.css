@@ -1,0 +1,47 @@
+.banner {
+  background-color: #555454;
+  color: #e7e3e3;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .banner {
+    font-size: 12px;
+    padding: 6px 0;
+    font-weight: normal;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .banner {
+    font-size: 14px;
+    padding: 10px 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    display: flex;
+    height: 54px;
+    justify-content: center;
+    font-weight: normal;
+  }
+}
+@media (min-width: 1025px) {
+  .banner {
+    font-size: 14px;
+    padding: 12px 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    display: flex;
+    height: 54px;
+    justify-content: center;
+    font-weight: normal;
+  }
+}
+
+/*# sourceMappingURL=Banner.css.map */
